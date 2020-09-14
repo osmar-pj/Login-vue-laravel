@@ -1,0 +1,38 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #ea907a;
+$primary-invert: findColorInvert($primary);
+$orange: #fbc687;
+$orange-invert: findColorInvert($orange);
+$yellow: #f4f7c5;
+$yellow-invert: findColorInvert($yellow);
+$green: #aacdbe;
+$green-invert: findColorInvert($green);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "orange": ($orange, $orange-invert),
+    "yellow": ($yellow, $yellow-invert),
+    "green": ($green, $green-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert)
+);
+$menu-item-active-background-color: #ea6c57;
+$menu-label-color: #fff;
+$menu-item-color: #fff;
+$menu-item-radius: 10px;
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
